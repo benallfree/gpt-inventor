@@ -1,5 +1,5 @@
 <script lang="ts">
-	import meta from '$lib/meta';
+	import meta from '$lib/data';
 
 	const {
 		meta: { title, description, purpose, requires, stripe, logo },
@@ -108,7 +108,7 @@
 		<div class="container mx-auto">
 			<h2 class="text-3xl font-bold mb-20">{chat.title}</h2>
 			{#each chat.items as item}
-				<div class={`chat chat-${item.who}`}>
+				<div class={`chat chat-${item.who === 'bot' ? 'start' : 'end'}`}>
 					<div class="chat-image avatar">
 						<div class="w-10 rounded-full">
 							{#if item.who === 'start'}
