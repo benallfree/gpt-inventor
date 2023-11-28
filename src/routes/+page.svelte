@@ -111,7 +111,7 @@
 				<div class={`chat chat-${item.who === 'bot' ? 'start' : 'end'}`}>
 					<div class="chat-image avatar">
 						<div class="w-10 rounded-full">
-							{#if item.who === 'start'}
+							{#if item.who === 'bot'}
 								<enhanced:img src={chat.botAvatar} />
 							{:else}
 								<enhanced:img src={chat.userAvatar} />
