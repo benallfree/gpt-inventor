@@ -2,7 +2,7 @@
 	import meta from '$lib/data';
 
 	const {
-		meta: { title, description, purpose, requires, stripe, logo },
+		meta: { title, description, purpose, requires, stripe, logo, xHandle, logoUrl, canonicalUrl },
 		sections: { features, benefits, testimonials, faq, chat }
 	} = meta;
 	let e = $state<HTMLDivElement | undefined>(undefined);
@@ -22,6 +22,18 @@
 
 <svelte:head>
 	<title>{title}</title>
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content={xHandle} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={logoUrl} />
+
+	<meta property="og:title" content={title} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={canonicalUrl} />
+	<meta property="og:image" content={logoUrl} />
+	<meta property="og:description" content={description} />
+	<meta property="og:site_name" content={title} />
 </svelte:head>
 
 <div class="hero min-h-screen">
