@@ -1,7 +1,6 @@
 import logo from './assets/logo.png?enhanced';
 import botAvatar from './assets/bot-avatar.png?enhanced';
 import userAvatar from './assets/user-avatar.png?enhanced';
-import sampleLogo from './assets/sample-logo.png?enhanced';
 
 export default {
 	meta: {
@@ -10,7 +9,8 @@ export default {
 		description: `Invent, create, deploy, and monetize your next GPT idea in 1 hour`,
 		purpose: `Unlock the potential of custom GPT products with GPT Inventor.`,
 		stripe: {
-			text: `Lifetime Membership - $9.99`
+			text: `Lifetime Membership - $9.99`,
+			url: `https://buy.stripe.com/4gwbJqg648vV8oM000`
 		},
 		requires: `* Requires a ChatGTP Premium Subscription. You will receive an email with the GPT Inventor
 	link when payment is complete.`
