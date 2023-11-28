@@ -1,0 +1,15 @@
+{
+  "name": "gpt-inventor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "static-server www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}

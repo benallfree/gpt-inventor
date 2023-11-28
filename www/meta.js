@@ -1,16 +1,19 @@
-const xIds = ['1729214803179434026']
+const xIds = [
+  '1729214803179434026',
+  '1729214803179434027',
+  '1729214803179434028',
+  '1729214803179434029',
+]
 
 const populateReviews = () => {
   const e = document.getElementById('x-cards')
 
-  // Iterate through the array of URLs and create Twitter cards
   xIds.forEach((id) => {
-    // Create an iframe for each Twitter status URL
-    const container = document.createElement('div')
-    e.appendChild(container)
-    twttr.widgets.createTweet(id, container, {
+    twttr.widgets.createTweet(id, e, {
       theme: 'dark',
       conversation: 'none',
+      cards: 'hidden',
+      dnt: true,
     })
   })
 }

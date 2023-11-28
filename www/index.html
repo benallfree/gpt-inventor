@@ -24,6 +24,10 @@
           <h1 class="text-5xl font-bold">GPT Inventor</h1>
           <p class="py-6">Your Custom GPT Idea Generator</p>
           <button class="btn btn-primary">Buy Now with Stripe</button>
+          <p class="text-secondary">
+            * Requires a ChatGTP Premium Subscription. You will receive an email
+            with the GPT Inventor link when payment is complete.
+          </p>
         </div>
       </div>
     </div>
@@ -97,8 +101,10 @@
     <section class="py-12 bg-gray-800 text-gray-400">
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center">What People Are Saying</h2>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div id="x-cards" class="grid grid-cols-1 gap-4"></div>
+        <div
+          id="x-cards"
+          class="mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           <script>
             populateReviews()
           </script>
