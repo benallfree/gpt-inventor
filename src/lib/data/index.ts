@@ -12,12 +12,7 @@ export default {
 		testimonials: {
 			// Replace these with your own X.com post IDs
 			enabled: true,
-			ids: [
-				'1729214803179434026',
-				'1729214803179434027',
-				'1729214803179434028',
-				'1729214803179434029'
-			]
+			ids: ['1729558569496858781']
 		},
 		faq,
 		chat
