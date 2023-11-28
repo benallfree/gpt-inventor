@@ -35,7 +35,7 @@
 			<p class="mt-4 text-lg mt-10">
 				{purpose}
 			</p>
-			<button class="btn btn-primary mt-10">{stripe.text}</button>
+			<a class="btn btn-primary mt-10" href={stripe.url}>{stripe.text}</a>
 			<p class="text-secondary mt-10">
 				{requires}
 			</p>
@@ -145,7 +145,7 @@
 			</svg>
 			<span> {chat.continue}</span>
 			<div>
-				<button class="btn btn-primary mt-10"> {stripe.text}</button>
+				<a class="btn btn-primary mt-10" href={stripe.url}>{stripe.text}</a>
 			</div>
 		</div>
 	</div>
