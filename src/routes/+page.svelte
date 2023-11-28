@@ -86,17 +86,20 @@
 <!-- FAQ Section -->
 {#if faq.enabled}
 	<section class="py-12">
-		{#each faq.items as item}
-			<div class="collapse collapse-arrow">
-				<input type="radio" name="my-accordion-2" checked />
-				<div class="collapse-title text-xl font-medium">{item.question}</div>
-				<div class="collapse-content">
-					<p>
-						{@html item.answer}
-					</p>
+		<div class="container mx-auto">
+			<h2 class="text-3xl font-bold mb-20">{faq.title}</h2>
+			{#each faq.items as item}
+				<div class="collapse collapse-arrow">
+					<input type="radio" name="my-accordion-2" checked />
+					<div class="collapse-title text-xl font-medium">{item.question}</div>
+					<div class="collapse-content">
+						<p>
+							{@html item.answer}
+						</p>
+					</div>
 				</div>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</section>
 {/if}
 
@@ -105,7 +108,7 @@
 		<div class="container mx-auto">
 			<h2 class="text-3xl font-bold mb-20">{chat.title}</h2>
 			{#each chat.items as item}
-				<div class={`chat chat-${item.who}`}>
+				<div class={`chat ${item.who === 'start' ? 'chat-start' : 'chat-end'}`}>
 					<div class="chat-image avatar">
 						<div class="w-10 rounded-full">
 							{#if item.who === 'start'}
