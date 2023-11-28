@@ -325,7 +325,7 @@ export default {
 						Next, I&#39;ll create an HTML landing page for Adventure Planner GPT, which will
 						include:
 					</p>
-					<ul>
+					<ul class='list-disc'>
 						<li>A banner with this logo.</li>
 						<li>A Stripe purchase button.</li>
 						<li>A call to action.</li>

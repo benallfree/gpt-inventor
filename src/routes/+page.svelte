@@ -108,7 +108,7 @@
 		<div class="container mx-auto">
 			<h2 class="text-3xl font-bold mb-20">{chat.title}</h2>
 			{#each chat.items as item}
-				<div class={`chat ${item.who === 'start' ? 'chat-start' : 'chat-end'}`}>
+				<div class={`chat chat-${item.who}`}>
 					<div class="chat-image avatar">
 						<div class="w-10 rounded-full">
 							{#if item.who === 'start'}

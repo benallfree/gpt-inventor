@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {}
 	},
+	safelist: ['list-decimal', 'chat-start', 'chat-end', 'list-disc', 'list-none'],
 	plugins: [require('daisyui')],
 	daisyui: {
 		themes: [
